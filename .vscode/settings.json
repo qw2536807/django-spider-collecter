@@ -1,0 +1,5 @@
+{
+    "python.pythonPath": "C:\\Users\\jinsy\\miniconda3\\envs\\django3.0\\python.exe",
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true
+}
