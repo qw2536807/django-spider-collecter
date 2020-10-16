@@ -1,4 +1,4 @@
-from django.contrib.postgres.fields import JSONField
+from django.contrib.postgres.fields import JSONField, ArrayField
 from django.db import models
 from django.contrib.auth.models import AbstractUser
 
@@ -33,4 +33,6 @@ class Metadata(models.Model):
         max_length=1000, verbose_name="记录id 为reoce表里的url")
     metadata_name = models.CharField(
         max_length=10, verbose_name="元数据name 和recode_id为业务上的联合唯一")
-    content = JSONField(verbose_name="元数据内容", default={})
+
+    content = ArrayField(base_field=models.CharField(max_length=200),
+                         verbose_name="元数据内容", blank=True, null=True)

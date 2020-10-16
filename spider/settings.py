@@ -108,6 +108,17 @@ WSGI_APPLICATION = 'spider.wsgi.application'
 #     }
 # }
 
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'USER': 'ai_usr_ohs5',
+        'PASSWORD': 'lgb2536807',
+        'HOST': 'pgm-uf6kj9i7v78o08drno.pg.rds.aliyuncs.com',
+        'PORT': '1433',
+        'NAME': 'spider_test2'
+    }
+}
+
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators

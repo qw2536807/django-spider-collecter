@@ -33,7 +33,7 @@ class MetadataView(APIView):
     @swagger_auto_schema(
         operation_description="apiview post description override",
         request_body=MetadataSerializer,
-        security=[],
+        security=[],  
     )
     def post(self, request, format=None):
 
